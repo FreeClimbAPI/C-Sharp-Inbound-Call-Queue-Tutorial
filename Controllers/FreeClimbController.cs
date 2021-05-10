@@ -34,7 +34,7 @@ namespace InboundCallQueue.Controllers {
         options.setAlias ("InboundCallQueue");
 
         // Create FreeClimbClient object
-        FreeClimbClient client = new FreeClimbClient (getFreeClimbAccountId (), getFreeClimbAccountToken ());
+        FreeClimbClient client = new FreeClimbClient (getFreeClimbAccountId (), getFreeClimbApiKeys ());
 
         // Create a queue with an alias
         Queue queue = client.getQueuesRequester.create (options);
@@ -129,7 +129,7 @@ namespace InboundCallQueue.Controllers {
       return "";
     }
 
-    private string getFreeClimbAccountToken () {
+    private string getFreeClimbApiKeys () {
       return "";
     }
 
